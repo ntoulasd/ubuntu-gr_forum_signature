@@ -13,7 +13,7 @@ try:
     from gi.repository import Gtk, Gdk
     # Start gtk3
     import forum_signature_gtk3
-    forum_signature_gtk3.main()
+    # forum_signature_gtk3.main()
 except ImportError:
     print("Could not load gtk3 module.\n")
 
