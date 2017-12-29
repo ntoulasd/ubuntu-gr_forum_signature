@@ -492,7 +492,7 @@ class siggui:
         # CHECK WUBI
         self.iswubi()
         # CHECK if has more than 2 OS on same device partition
-        #self.hasmorethan2()
+        # self.hasmorethan2()
 
     def on_textboxbuf_changed(self, widget):
         (start, end) = self.textboxbuf.get_bounds()
@@ -877,7 +877,7 @@ class osgrubber:
         self.log.debug("Final OS list: {0}\nFinal OS dict: {1}\nFinal 'more than 2 kernels' list: {2}\n".format(self.oslist, self.osdict, self.morethan2))
         if self.morethan2:
             mt2 = ' '.join(self.morethan2)
-            self.log.warning("More than 2 OS found on device(s): {0}".format(mt2))
+            self.log.info("More than 2 OS found on device(s): {0}".format(mt2))
         return True
 
     def is_currentos(self, osline):
