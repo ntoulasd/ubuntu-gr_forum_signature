@@ -491,7 +491,7 @@ class siggui:
         # CHECK WUBI
         self.iswubi()
         # CHECK if has more than 2 OS on same device partition
-        self.hasmorethan2()
+        #self.hasmorethan2()
 
     def on_textboxbuf_changed(self, widget):
         (start, end) = self.textboxbuf.get_bounds()
