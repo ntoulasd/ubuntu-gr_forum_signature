@@ -34,6 +34,10 @@ if pyversion < '2.7':
 if platform.system() != "Linux":
     exit('ERROR: This script is built for GNU/Linux platforms (for now)')
 
+import gi
+gi.require_version("Gtk", "3.0")
+from gi.repository import Gtk
+
 import sys
 import os
 import os.path
