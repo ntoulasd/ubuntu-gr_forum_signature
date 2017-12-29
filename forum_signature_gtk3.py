@@ -145,6 +145,7 @@ class core:
             "System manufacturer",
             "System Product Name",
             "To Be Filled By O.E.M.",
+            "To be filled by O.E.M.",
         }
         self.info = {
             "cpu": self.unknown,
@@ -562,8 +563,7 @@ class siggui:
         if self.is_wubi:
             s = "<b>ΠΡΟΕΙΔΟΠΟΙΗΣΗ</b>: Δε συστήνεται η εγκατάσταση μέσω wubi."
             s2 = "Η εγκατάσταση που έχετε έγινε μέσω <span foreground='red'>wubi</span>. \
-Τετοια εγκατάσταση συστήνεται μόνο για δοκιμαστικούς σκοπούς \
-(<a href='http://wiki.ubuntu-gr.org/whynotwubi'>διαβάστε τους λόγους</a>).\n\
+Τετοια εγκατάσταση συστήνεται μόνο για δοκιμαστικούς σκοπούς \n\
 Διαβάστε στους <a href='http://forum.ubuntu-gr.org/viewtopic.php?f=9&amp;t=859'>\
 οδηγούς/how to/tutorials</a> πώς να κάνετε σωστή εγκατάσταση."
             self.messagedialog(s, s2)
