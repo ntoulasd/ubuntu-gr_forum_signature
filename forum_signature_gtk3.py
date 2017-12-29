@@ -141,11 +141,11 @@ class core:
             "  @ ": " ",
         }
         # Array for removing default motherboard vendor values
-        self.defcoreid = [
+        self.defcoreid = {
             "System manufacturer",
             "System Product Name",
             "To Be Filled By O.E.M.",
-        ]
+        }
         self.info = {
             "cpu": self.unknown,
             "memory": self.unknown,
