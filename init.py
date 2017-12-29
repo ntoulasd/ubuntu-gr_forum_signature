@@ -7,21 +7,13 @@ if platform.python_version() < '2.5':
 if platform.system() != "Linux":
     exit('ERROR: This script is built for GNU/Linux platforms (for now)')
 
-gtk3 = True
 try:
     import gi
     gi.require_version("Gtk", "3.0")
     from gi.repository import Gtk, Gdk
-except ImportError:
-    print("Could not load gtk3 module. Using old gtk2.\n")
-    gtk3 = False
-
-if gtk3:
     # Start gtk3
     import forum_signature_gtk3
     forum_signature_gtk3.main()
-else:
-    # Start gtk2
-    import forum_signature
-    forum_signature.main()
+except ImportError:
+    print("Could not load gtk3 module.\n")
 
