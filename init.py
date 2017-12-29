@@ -9,6 +9,8 @@ if platform.system() != "Linux":
 
 gtk3 = True
 try:
+    import gi
+    gi.require_version("Gtk", "3.0")
     from gi.repository import Gtk, Gdk
 except ImportError:
     print("Could not load gtk3 module. Using old gtk2.\n")
